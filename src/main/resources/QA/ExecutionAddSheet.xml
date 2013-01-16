@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xwikidoc>
-<web>QA</web>
-<name>ExecutionAddSheet</name>
-<language></language>
-<defaultLanguage></defaultLanguage>
-<translation>0</translation>
-<parent>QA.ExecutionClass</parent>
-<creator>XWiki.Admin</creator>
-<author>XWiki.Admin</author>
-<customClass></customClass>
-<contentAuthor>XWiki.Admin</contentAuthor>
-<creationDate>1355506014000</creationDate>
-<date>1358275249000</date>
-<contentUpdateDate>1358275162000</contentUpdateDate>
-<version>5.1</version>
-<title>ExecutionAddSheet</title>
-<template></template>
-<defaultTemplate></defaultTemplate>
-<validationScript></validationScript>
-<comment></comment>
-<minorEdit>false</minorEdit>
-<syntaxId>xwiki/2.1</syntaxId>
-<hidden>false</hidden>
-<content>{{velocity}}
+  <web>QA</web>
+  <name>ExecutionAddSheet</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>QA.ExecutionClass</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1355506014000</creationDate>
+  <date>1358275249000</date>
+  <contentUpdateDate>1358275162000</contentUpdateDate>
+  <version>1.1</version>
+  <title>ExecutionAddSheet</title>
+  <template/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <content>{{velocity}}
 #set($object=$doc.newObject('QA.ExecutionClass'))
 #if($request.addObject)
   #set($prefix='QA.ExecutionClass_')
@@ -96,4 +97,5 @@
 &lt;/form&gt;
 {{/html}}
 #end
-{{/velocity}}</content></xwikidoc>
+{{/velocity}}</content>
+</xwikidoc>
