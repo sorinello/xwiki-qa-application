@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <xwikidoc>
-  <web>QA</web>
-  <name>ExecutionAddSheet</name>
-  <language/>
-  <defaultLanguage/>
-  <translation>0</translation>
-  <parent>QA.ExecutionClass</parent>
-  <creator>xwiki:XWiki.Admin</creator>
-  <author>xwiki:XWiki.Admin</author>
-  <customClass/>
-  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1355506014000</creationDate>
-  <date>1355858074000</date>
-  <contentUpdateDate>1355858074000</contentUpdateDate>
-  <version>1.1</version>
-  <title>ExecutionAddSheet</title>
-  <template/>
-  <defaultTemplate/>
-  <validationScript/>
-  <comment/>
-  <minorEdit>false</minorEdit>
-  <syntaxId>xwiki/2.1</syntaxId>
-  <hidden>false</hidden>
-  <content>{{velocity}}
+<web>QA</web>
+<name>ExecutionAddSheet</name>
+<language></language>
+<defaultLanguage></defaultLanguage>
+<translation>0</translation>
+<parent>QA.ExecutionClass</parent>
+<creator>XWiki.Admin</creator>
+<author>XWiki.Admin</author>
+<customClass></customClass>
+<contentAuthor>XWiki.Admin</contentAuthor>
+<creationDate>1355506014000</creationDate>
+<date>1358275249000</date>
+<contentUpdateDate>1358275162000</contentUpdateDate>
+<version>5.1</version>
+<title>ExecutionAddSheet</title>
+<template></template>
+<defaultTemplate></defaultTemplate>
+<validationScript></validationScript>
+<comment></comment>
+<minorEdit>false</minorEdit>
+<syntaxId>xwiki/2.1</syntaxId>
+<hidden>false</hidden>
+<content>{{velocity}}
 #set($object=$doc.newObject('QA.ExecutionClass'))
 #if($request.addObject)
   #set($prefix='QA.ExecutionClass_')
@@ -37,23 +36,64 @@
   #set($discard=$doc.save())
   $response.sendRedirect($doc.getURL())
 #else
-## we set $object because it is used in ExecutionSheet
+#if($request.xpage=='plain')
+  {{html}}
+  ## AJAX request
+  ## Hook for inserting CSS skin extensions
+  ## - Skin JAR extension hook. Placed first to allow other skin extensions to override it.
+  &lt;!-- com.xpn.xwiki.plugin.skinx.CssResourceSkinExtensionPlugin --&gt;
+  &lt;!-- com.xpn.xwiki.plugin.skinx.CssSkinExtensionPlugin --&gt;
+  &lt;!-- com.xpn.xwiki.plugin.skinx.CssSkinFileExtensionPlugin --&gt;
+  ## Hooks for inserting JavaScript skin extensions
+  ##
+  ## - Skin JAR extension hook. Placed first to allow other skin extensions to override it.
+  &lt;!-- com.xpn.xwiki.plugin.skinx.JsResourceSkinExtensionPlugin --&gt;
+  ## - Skin file extension hook.
+  &lt;!-- com.xpn.xwiki.plugin.skinx.JsSkinFileExtensionPlugin --&gt;
+  ## - Skin extension hook
+  &lt;!-- com.xpn.xwiki.plugin.skinx.JsSkinExtensionPlugin --&gt;
+  ##
+  {{/html}}
+
+#end
 #set($discard=$doc.use($object))
-$xcontext.setDisplayMode("edit")
+#if ("$!object.getProperty('user').value"=="")
+  ## We want to set the User with a absolute reference
+  #set($discard=$object.set('user', $services.model.serialize($xcontext.userReference, 'default')))
+#end
+#if ("$!object.getProperty('date').value"=="")
+  #set($discard=$object.set('date', $datetool.date))
+#end
 {{html wiki="true"}}
-&lt;form action=""&gt;
-&lt;div class="hidden"&gt;
-  &lt;input type="hidden" name="form_token" value="$!{services.csrf.getToken()}"/&gt;
-  &lt;input type="hidden" name="sheet" value="QA.ExecutionAddSheet"/&gt;
-&lt;/div&gt;
-{{include reference="QA.ExecutionSheet"/}}
-&lt;p class="buttons"&gt;
-  &lt;span class="buttonwrapper"&gt;
-    &lt;input type="submit" name="addObject" value="Add"/&gt;
-  &lt;/span&gt;
-&lt;/p&gt;
+&lt;form class="xform" action="$doc.getURL('view', $request.queryString)"&gt;
+  &lt;div class="hidden"&gt;
+    &lt;input type="hidden" name="form_token" value="$!{services.csrf.getToken()}"/&gt;
+    &lt;input type="hidden" name="sheet" value="QA.ExecutionAddSheet"/&gt;
+    &lt;input type="hidden" name="QA.ExecutionClass_${object.number}_user" value="$object.getProperty('user').value"/&gt;
+    #set($dateFormat=$xwiki.getDocument('QA.ExecutionClass').getxWikiClass().get('date').getProperty('dateFormat').value)
+    &lt;input type="hidden" name="QA.ExecutionClass_${object.number}_date" value="$escapetool.xml($datetool.format($dateFormat, $object.getProperty('date').value))"/&gt;
+  &lt;/div&gt;
+  ## XE version selector    
+  ; &lt;label for="QA.ExecutionClass_${object.number}_platform"&gt;$doc.displayPrettyName('platform', false, false)&lt;/label&gt;
+  : $doc.display('platform', 'edit')
+  ##
+  ## Browser Version Selector
+  ; &lt;label for="QA.ExecutionClass_${object.number}_browser"&gt;$doc.displayPrettyName('browser', false, false)&lt;/label&gt;
+  : $doc.display('browser', 'edit')
+  ##
+  ## Passed/Fail
+  ; &lt;label for="QA.ExecutionClass_${object.number}_passed"&gt;$doc.displayPrettyName('passed', false, false)&lt;/label&gt;
+  ; $doc.display('passed', 'edit')
+  ##
+  ## Jira Issue
+  ; &lt;label for="QA.ExecutionClass_${object.number}_jira&gt;$doc.displayPrettyName('jira', false, false)&lt;/label&gt;
+  : $doc.display('jira', 'edit')
+  &lt;p class="buttons"&gt;
+    &lt;span class="buttonwrapper"&gt;
+      &lt;input type="submit" name="addObject" value="Add"/&gt;
+    &lt;/span&gt;
+  &lt;/p&gt;
 &lt;/form&gt;
 {{/html}}
 #end
-{{/velocity}}</content>
-</xwikidoc>
+{{/velocity}}</content></xwikidoc>

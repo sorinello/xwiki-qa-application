@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <xwikidoc>
-  <web>QA</web>
-  <name>Management</name>
-  <language/>
-  <defaultLanguage/>
-  <translation>0</translation>
-  <parent>QA.IExplorer7</parent>
-  <creator>xwiki:XWiki.Admin</creator>
-  <author>xwiki:XWiki.Admin</author>
-  <customClass/>
-  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1355404008000</creationDate>
-  <date>1355765896000</date>
-  <contentUpdateDate>1355765896000</contentUpdateDate>
-  <version>1.1</version>
-  <title>Management</title>
-  <template/>
-  <defaultTemplate/>
-  <validationScript/>
-  <comment/>
-  <minorEdit>false</minorEdit>
-  <syntaxId>xwiki/2.1</syntaxId>
-  <hidden>false</hidden>
-  <content>{{info}}This page is an easy way to see the existing browsers and existing platform versions with the QA Application{{/info}}
+<web>QA</web>
+<name>Management</name>
+<language></language>
+<defaultLanguage></defaultLanguage>
+<translation>0</translation>
+<parent>QA.WebHome</parent>
+<creator>XWiki.Admin</creator>
+<author>XWiki.Admin</author>
+<customClass></customClass>
+<contentAuthor>XWiki.Admin</contentAuthor>
+<creationDate>1355404008000</creationDate>
+<date>1357912729000</date>
+<contentUpdateDate>1357912729000</contentUpdateDate>
+<version>2.3</version>
+<title>Management</title>
+<template></template>
+<defaultTemplate></defaultTemplate>
+<validationScript></validationScript>
+<comment></comment>
+<minorEdit>true</minorEdit>
+<syntaxId>xwiki/2.1</syntaxId>
+<hidden>false</hidden>
+<content>{{info}}This page is an easy way to see the existing browsers and existing platform versions with the QA Application{{/info}}
 
-= Existing Browsers =
 {{velocity}}
+= Existing Tests =
+#set($hql = "select COUNT(obj) from BaseObject obj, XWikiDocument doc where doc.fullName=obj.name and obj.className='QA.TestClass' and doc.fullName &lt;&gt; 'QA.TestTemplate'")
+#set($results = $xwiki.search($hql, 0, 0))
+{{info}}There are currently ${results.get(0)} tests (QA.TestClass) in the application. For the full list, please visit [[QA Webhome&gt;&gt;QA.WebHome]].{{/info}}
+= Existing Browsers =
+#set($hql = "select COUNT(obj) from BaseObject obj, XWikiDocument doc where doc.fullName=obj.name and obj.className='QA.BrowserClass'")
+#set($results = $xwiki.search($hql, 0, 0).get(0))
+{{info}}There are $results browsers defined in the application.{{/info}}
 #set($collist = ["doc.name", "doc.space", "doc.date", "doc.author"])
 #set($colprops = {
                    "doc.name" : { "type" : "text" ,"link" : "true", "size" : 30, "sortable":true, "filterable":true},
@@ -39,10 +45,10 @@
                   "translationPrefix" : "xe.index.",
                   "rowCount": 10 })
 #livetable("browsers" $collist $colprops $options) 
-{{/velocity}}
-
 = Existing Platforms =
-{{velocity}}
+#set($hql = "select COUNT(obj) from BaseObject obj, XWikiDocument doc where doc.fullName=obj.name and obj.className='QA.PlatformClass'")
+#set($results = $xwiki.search($hql, 0, 0).get(0))
+{{info}}There are $results platform versions defined in the application.{{/info}}
 #set($collist = ["doc.name", "doc.space", "doc.date", "doc.author"])
 #set($colprops = {
                    "doc.name" : { "type" : "text" ,"link" : "true", "size" : 30, "sortable":true, "filterable":true},
@@ -55,5 +61,4 @@
                   "translationPrefix" : "xe.index.",
                   "rowCount": 10 })
 #livetable("platform" $collist $colprops $options) 
-{{/velocity}}</content>
-</xwikidoc>
+{{/velocity}}</content></xwikidoc>
