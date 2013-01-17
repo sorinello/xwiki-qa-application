@@ -5,5 +5,6 @@ XWiki QA Application created to keep easier track of what has been tested and ma
 
 ToDo List
 * investigate build issue why fails with versions > 4.1.4
-* make translations loading automatically using the new build-in mechanism
-* make the ExecutionAddSheet modal
+* add more translations
+* make translations loading automatically using the new built-in mechanism
+
