@@ -12,7 +12,7 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1340726350000</creationDate>
-  <date>1358276500000</date>
+  <date>1358355441000</date>
   <contentUpdateDate>1358276108000</contentUpdateDate>
   <version>1.1</version>
   <title>QA</title>
@@ -112,7 +112,8 @@
       loading, {}, {
         'verticalPosition' : 'top',
         'title' : "Run Test",
-        'removeOnClose' : true
+        'removeOnClose' : true,
+        'extraClassName' : 'runTest'
       }
     );
     dialog.showDialog();
@@ -250,7 +251,11 @@
     </property>
     <property>
       <code>td a.action{
-background-image: url("/xwiki/resources/icons/silk/control_play.png");
+  background-image: url("/xwiki/resources/icons/silk/control_play.png");
+}
+
+.runTest.xdialog-box{
+  width:500px;
 }</code>
     </property>
     <property>

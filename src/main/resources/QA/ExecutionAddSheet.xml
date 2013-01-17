@@ -12,10 +12,10 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1355506014000</creationDate>
-  <date>1358275249000</date>
-  <contentUpdateDate>1358275162000</contentUpdateDate>
+  <date>1358419317000</date>
+  <contentUpdateDate>1358419317000</contentUpdateDate>
   <version>1.1</version>
-  <title>ExecutionAddSheet</title>
+  <title>#if($doc.name == 'ExecutionAddSheet')Execution Add Sheet#{else}$services.display.title($doc, {'displayerHint': 'default'})#end</title>
   <template/>
   <defaultTemplate/>
   <validationScript/>
@@ -66,6 +66,16 @@
   #set($discard=$object.set('date', $datetool.date))
 #end
 {{html wiki="true"}}
+(% class = "xform" %)(((
+  ; &lt;label&gt;Steps to Reproduce&lt;/label&gt;
+  #if($doc.name!='ExecutionAddSheet')
+  : {{include reference="$services.model.serialize($doc.documentReference)"/}}
+  #end
+  ; &lt;label&gt;Expected Results&lt;/label&gt;
+  #if($doc.name!='ExecutionAddSheet')
+  : $doc.display('expectedResult', $doc.getObject('QA.TestClass'))
+  #end
+)))
 &lt;form class="xform" action="$doc.getURL('view', $request.queryString)"&gt;
   &lt;div class="hidden"&gt;
     &lt;input type="hidden" name="form_token" value="$!{services.csrf.getToken()}"/&gt;

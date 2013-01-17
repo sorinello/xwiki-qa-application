@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1352720872000</creationDate>
-  <date>1358330410000</date>
-  <contentUpdateDate>1358330381000</contentUpdateDate>
+  <date>1358419155000</date>
+  <contentUpdateDate>1358419155000</contentUpdateDate>
   <version>1.1</version>
   <title>#if($doc.name == 'TestSheet')Test Sheet#{else}$services.display.title($doc, {'displayerHint': 'default'})#end</title>
   <template/>
@@ -153,8 +153,7 @@
 {{html wiki="true"}}
 (% class="xform" %)
 (((
-          #set($location=$request.testSpace + $request.testName)      
-            ; &lt;label for="content"&gt;Steps to reproduce&lt;/label&gt;
+           ; &lt;label for="content"&gt;Steps to reproduce&lt;/label&gt;
            #set($type="edit")
            #if ($type == 'edit')
            #set ($useWysiwygEditor = $xwiki.getUserPreference('editor') == 'Wysiwyg')
@@ -178,11 +177,11 @@
           #else
           The display mode is not specified!
           #end
-            ; &lt;label for="$location.TestClass_0_expectedResult&gt;$doc.displayPrettyName('expectedResult', false, false)&lt;/label&gt;
+            ; &lt;label for="TestClass_0_expectedResult&gt;$doc.displayPrettyName('expectedResult', false, false)&lt;/label&gt;
             : $doc.display('expectedResult')
             ; &lt;label for="automated"&gt;$doc.displayPrettyName('automated', false, false)&lt;/label&gt;
             : $doc.display('automated')
-            ; &lt;label for="$location.TestClass_0_automatedLinkSourceCode"&gt;$doc.displayPrettyName('automatedLinkSourceCode', false, false)&lt;/label&gt;
+            ; &lt;label for="TestClass_0_automatedLinkSourceCode"&gt;$doc.displayPrettyName('automatedLinkSourceCode', false, false)&lt;/label&gt;
             : $doc.display('automatedLinkSourceCode')
 )))
 {{/html}}
@@ -245,7 +244,7 @@
       #if ($browserName=='Internet Explorer' &amp;&amp; $browserVersion=='10')#set($browserIcon="${browserName} ${browserVersion}")#end
       ##set($username=$xwiki.getUserName($object.getProperty('user').getValue(), "$first_name $last_name", true))
       #set($username=$xwiki.getUserName($object.getProperty('user').getValue(), true))
-      #set($date=$xwiki.formatDate($object.getProperty('date').getValue(),"EEEE dd MMMM yyyy HH:mm"))
+      #set($date=$xwiki.formatDate($object.getProperty('date').getValue(),"EEEE dd MMMM yyyy HH:mm:ss"))
       #if ($object.getProperty('passed').getValue() == '1')
          #set($status = '(/)') 
       #else
