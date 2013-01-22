@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <xwikidoc>
-  <web>QA</web>
-  <name>LiveTableResults</name>
-  <language/>
-  <defaultLanguage/>
-  <translation>0</translation>
-  <parent>XWiki.WebHome</parent>
-  <creator>xwiki:XWiki.Admin</creator>
-  <author>xwiki:XWiki.Admin</author>
-  <customClass/>
-  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1352394078000</creationDate>
-  <date>1357827911000</date>
-  <contentUpdateDate>1357827911000</contentUpdateDate>
-  <version>1.1</version>
-  <title>$msg.get("platform.livetable.results")</title>
-  <template/>
-  <defaultTemplate/>
-  <validationScript/>
-  <comment/>
-  <minorEdit>false</minorEdit>
-  <syntaxId>xwiki/2.0</syntaxId>
-  <hidden>true</hidden>
-  <attachment>
-    <filename>Internet Explorer.png</filename>
-    <filesize>2561</filesize>
-    <author>XWiki.Admin</author>
-    <date>1352711535000</date>
-    <version>1.1</version>
-    <comment/>
-    <content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+<web>QA</web>
+<name>LiveTableResults</name>
+<language></language>
+<defaultLanguage></defaultLanguage>
+<translation>0</translation>
+<parent>XWiki.WebHome</parent>
+<creator>XWiki.Admin</creator>
+<author>XWiki.Admin</author>
+<customClass></customClass>
+<contentAuthor>XWiki.Admin</contentAuthor>
+<creationDate>1352394078000</creationDate>
+<date>1358869464000</date>
+<contentUpdateDate>1358869462000</contentUpdateDate>
+<version>5.1</version>
+<title>$msg.get("platform.livetable.results")</title>
+<template></template>
+<defaultTemplate></defaultTemplate>
+<validationScript></validationScript>
+<comment></comment>
+<minorEdit>false</minorEdit>
+<syntaxId>xwiki/2.0</syntaxId>
+<hidden>true</hidden><attachment>
+<filename>Internet Explorer.png</filename>
+<filesize>2561</filesize>
+<author>XWiki.Admin</author>
+<date>1358528948000</date>
+<version>1.2</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
@@ -75,16 +72,13 @@ LAsFdnjcVnidArx2Dl6HGb5CC3xeG4pK3WB5E4Jn/tbR/8rjrdnw+Ht3OC3/MhVIwyYzBY4Gt+Rn
 KTV7+eiBbUyo8zsbtrfvmRJbBMEX8HEWiyU/VUomk0nOheZnPuzsnup8+3Bior/jyxYXCRpulSSG
 lkYrDqcSevneA+HdqjEnq1ZydVZWEY+cTZwamsU0bXF4aEF0EUIoJZtakBOxiFFK8r/t26WFwxuO
 VJSbXD3Yans4UMqVzV+X5/vGMhcuXMpexP9x8gD/FGAAyEnJm+t7N9wAAAAASUVORK5CYII=
-</content>
-  </attachment>
-  <attachment>
-    <filename>Google Chrome.png</filename>
-    <filesize>900</filesize>
-    <author>XWiki.Admin</author>
-    <date>1352711535000</date>
-    <version>1.1</version>
-    <comment/>
-    <content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABv1BMVEX////gKCrcpSY5jUHmQjve
+</content></attachment><attachment>
+<filename>Google Chrome.png</filename>
+<filesize>900</filesize>
+<author>XWiki.Admin</author>
+<date>1358528948000</date>
+<version>1.2</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABv1BMVEX////gKCrcpSY5jUHmQjve
 pyXfIifkODTjMzHwwhPnsyDWnChLtElCmkXrVEcyhEDoS0H60AruvBrnsyDcpSbWnChLtElFn0ZZ
 mUBAlkTsW005jUHqVEcyhEDoS0HlPDffIifuYVHgKCr60ApAlkQ7kEI5jUHkODTjMzHywxfWnChL
 tElHpUfksCLepyVLtEn4zA/ywxfuvBr60ApSj8xFn0boS0HlPDfkODTjMzHgKCr0xw/uYVHfIidH
@@ -100,16 +94,13 @@ YzEboAJFfvUawnNmq9W8skovKSRTDNCO0MVT75jH0xfv84ww/Wr1AAihyOPepWlbzXS4gIEBCKly
 OjRlt7Msa48PYiDfAd2zwWBXVzC4jYH5AMu/jw5w/2cxKAAdIFtnV2on63DQClAJcDwQvTmPDt9i
 oEoA8jkQtDY9v/8XdiqHgKqxQBOj6mOFLiVeSm3gQkChTYYkKbozHQNIo81oVPc7haLo2I8UIlGt
 18ZxMzt0bPe6jPhU4Zcm77jL1VaeSyTbMwzgX5gEAF+4AAAAAElFTkSuQmCC
-</content>
-  </attachment>
-  <attachment>
-    <filename>Internet Explorer 10.png</filename>
-    <filesize>2454</filesize>
-    <author>XWiki.Admin</author>
-    <date>1355406835000</date>
-    <version>1.1</version>
-    <comment/>
-    <content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+</content></attachment><attachment>
+<filename>Internet Explorer 10.png</filename>
+<filesize>2454</filesize>
+<author>XWiki.Admin</author>
+<date>1358528948000</date>
+<version>1.2</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
@@ -153,16 +144,13 @@ nNoHBqt02GCkwTPgp/wsxYd+3dKynB1su676psa1x81Vouj1e3mTyZSQ3YzJYPjfBFRAc6sksYzU
 m/9xPEbymlpCa9LaPpk7my+zcIp5857YzkNDCDImh4cRza6B7h+f82RlXjWT7mfXZXqMEjRHKspp
 ra6tsd3gn8XnjpySR7r6Jg8cOJI8+M8Zad6+UnvtmPk2PCfIHwIMAN2fp7fGc7HUAAAAAElFTkSu
 QmCC
-</content>
-  </attachment>
-  <attachment>
-    <filename>Mozilla Firefox.png</filename>
-    <filesize>1768</filesize>
-    <author>XWiki.Admin</author>
-    <date>1352711536000</date>
-    <version>1.1</version>
-    <comment/>
-    <content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAlwSFlzAAAL
+</content></attachment><attachment>
+<filename>Mozilla Firefox.png</filename>
+<filesize>1768</filesize>
+<author>XWiki.Admin</author>
+<date>1358528948000</date>
+<version>1.2</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAlwSFlzAAAL
 EwAACxMBAJqcGAAAAAd0SU1FB9gMFQ4eAE5RbJsAAAZ6SURBVEjHjZZdiJxnFcd/z/M+78w7nzsz
 uzs7uzOZ7abZfDSxSZNaWxpKVUTBqtULC+bGGxEq3imCCqJXCl4I2qsiWBAr6YcklmjaUuNXU9NE
 k8a0aUw2H5ud2d3ZmZ2Pd+b9mud5vUijRQj1DwcOHM75w5/D+R/BByBV+3ZV1WcPFKr5/VOzhart
@@ -194,16 +182,13 @@ WiK+ck71n/2NPPHdw+Yp4HUg/I/hvA/BOiy9q7lsYqQ2FB0RZxJSSmFAexodaDAGISFWwmyMlHvi
 LevSM69w5Od/i55+b7j3QaafABbqcHC3xcEdSbm7mpSljBIpaQsZpOKwmxS9FRk3znfNhVM39UkN
 Z4BlYPx/fRW3vxag7EBdwFRKkpcWtqsZRoZNDavcis5tSf4X/wbBCg5RgNEBWQAAAABJRU5ErkJg
 gg==
-</content>
-  </attachment>
-  <attachment>
-    <filename>Internet Explorer 7.png</filename>
-    <filesize>2453</filesize>
-    <author>XWiki.Admin</author>
-    <date>1355406834000</date>
-    <version>1.1</version>
-    <comment/>
-    <content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+</content></attachment><attachment>
+<filename>Internet Explorer 7.png</filename>
+<filesize>2453</filesize>
+<author>XWiki.Admin</author>
+<date>1358528948000</date>
+<version>1.2</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
@@ -247,16 +232,13 @@ miL6f4edwSodMRhp8AwmwlOlsb7OrXVL2WDDrWXLqledNJeKotfv5U0mU0x2MyaD4aIzYDo7AUkK
 7ZGOWb5+YknKC6dDSm9SOyezZvCFFi5o3rLupSWH+9DDmBweRjS71rb+9gaMqTdeLAElaIpUlLO1
 WlRuu90/jc8cPCMPtrSPHzx4PH7o/A2atm/Q/nZNfRteYOQvAQYAG4qj5zaigSIAAAAASUVORK5C
 YII=
-</content>
-  </attachment>
-  <attachment>
-    <filename>Internet Explorer 8.png</filename>
-    <filesize>2461</filesize>
-    <author>XWiki.Admin</author>
-    <date>1355406834000</date>
-    <version>1.1</version>
-    <comment/>
-    <content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+</content></attachment><attachment>
+<filename>Internet Explorer 8.png</filename>
+<filesize>2461</filesize>
+<author>XWiki.Admin</author>
+<date>1358528948000</date>
+<version>1.2</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
@@ -300,16 +282,13 @@ nPCax5rn0/t/yVTDuFeRjovJ9Stt1539Lm/Bhdfds3XLL6tf39dZvasvdOM3I+KpmDSDNdlrXph1
 rwnlU9kqCCwjdGV9HAmTzLoG/wZZ7ZMFebpCMyeZdh4If90xjEHGaHczBpOzv/2X592pKSvPjeK/
 IqB4lZGSNDX1ri233uCdo5s7elocbeuOHTnSEz96riHVqSvV297Z/4YzhPwpwACAg9n5IpKAEQAA
 AABJRU5ErkJggg==
-</content>
-  </attachment>
-  <attachment>
-    <filename>Internet Explorer 9.png</filename>
-    <filesize>2475</filesize>
-    <author>XWiki.Admin</author>
-    <date>1355406834000</date>
-    <version>1.1</version>
-    <comment/>
-    <content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+</content></attachment><attachment>
+<filename>Internet Explorer 9.png</filename>
+<filesize>2475</filesize>
+<author>XWiki.Admin</author>
+<date>1358528948000</date>
+<version>1.2</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
@@ -353,9 +332,8 @@ m93Ju+w8DT5XYJewuMMbGRuZfxMATHblnMnMQuRwPT1diY9dOtS+lR/t/GHdtuZdw9ZaWc4L5IkW
 iyWhejmLybQkyDxFX7sBglStisJzSn/RG/EYKWxtD+3U6DlZWSZW2oSM9eCJ2LtnxzDCWVw+TrZ6
 hvo+etaXk33bwhosBPry+qKKzGTmut6d9Y67A8vEgolJdaJ3IHn69IXUmYWZUpq+R19Hl74NFxn5
 nwADAOxBqgBHo7u8AAAAAElFTkSuQmCC
-</content>
-  </attachment>
-  <content>{{include document="XWiki.LiveTableResultsMacros"/}}
+</content></attachment>
+<content>{{include document="XWiki.LiveTableResultsMacros"/}}
 
 {{velocity wiki="false"}}
 
@@ -368,6 +346,7 @@ nwADAOxBqgBHo7u8AAAAAElFTkSuQmCC
       #set($lastExecution=$execution)
     #end
   #end
+  ##Last Execution for $rowDoc was on $lastExecution
   #set($platform=$lastExecution.getProperty('platform').value)
   #set($platformDoc=$xwiki.getDocument($platform))
   #if ($platformDoc)
@@ -377,23 +356,29 @@ nwADAOxBqgBHo7u8AAAAAElFTkSuQmCC
   #end
   ##
   ##
-  #set($browsers = $collectionstool.getSet())
+  #set($browsers = {})
   #foreach($execution in $executions)
     #if ($execution.getProperty('platform').value == $platform)
       #set($browser=$execution.getProperty('browser').value)
       #set($browserDoc=$xwiki.getDocument($browser))
-      #set($discard = $browsers.add($browserDoc.get('name')))
+      #set($browserName = $browserDoc.get('name'))
+      #set($versions = $browsers.get($browserName))
+      #if(!$versions)
+        #set($versions = $collectionstool.getSet())
+        #set($discard = $browsers.put($browserName, $versions))
+      #end
+      #set($discard = $versions.add($browserDoc.get('version')))
     #end
   #end
-
-  ## We generate a image for each browser
-  #set($browsersImages='')
-   #foreach($browser in $browsers)
-    #set($browserIcon = $browser+'.png')
-    ##Final $browser
-    #set($browsersImages = $browsersImages + "&lt;img src=""$doc.getAttachmentURL($browserIcon)"" alt=""$browser"" title=""$browser""&gt;")
+  ## We get an image for each browser and put the versions
+  #set($browsersHTML='')
+  #foreach($browser in $sorttool.sort($browsers.entrySet(), 'key:asc'))
+    #set($browserIcon = $browser.key+'.png')
+    ## Sort (String sort, not Integer sort)
+    #set($browser.value = $sorttool.sort($browser.value))
+    #set($browsersHTML = $browsersHTML + "&lt;img src=""$doc.getAttachmentURL($browserIcon)"" alt=""$browser.key"" title=""$browser.key""&gt;" + "&lt;span class=""browserVersions""&gt;$browser.value.toString().replace('[', '').replace(']', '')&lt;/span&gt; " + "")
   #end
-  #set($discard = $row.put("browsers",$browsersImages))
+  #set($discard = $row.put("browsers","$browsersHTML"))
   ## We put the browsers as text
   ##set($discard = $row.put("browsers", $stringtool.join($browsers,',')))
   #set($discard = $row.put("doc_runTest_url", $rowDoc.getURL('view', 'sheet=QA.ExecutionAddSheet')))
@@ -407,5 +392,4 @@ nwADAOxBqgBHo7u8AAAAAElFTkSuQmCC
   #end
   $jsontool.serialize($map)
 #end
-{{/velocity}}</content>
-</xwikidoc>
+{{/velocity}}</content></xwikidoc>
